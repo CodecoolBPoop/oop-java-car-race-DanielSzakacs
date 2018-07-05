@@ -12,7 +12,6 @@ public class Weather {
         }else{
             isRaining = true;
         }
-        System.out.println(isRaining);
     }
 
     public static boolean isIsRaining() {

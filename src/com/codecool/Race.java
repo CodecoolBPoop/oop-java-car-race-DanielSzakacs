@@ -8,9 +8,6 @@ public  class Race {
     private List<Vehicles> vehicles = new ArrayList<Vehicles>();
 
 
-    protected boolean isThereABrokenTruck() {
-        return false;
-    }
 
     public static void main(String[] args) {
         Weather.setRaining(); // Set the weather
@@ -19,6 +16,17 @@ public  class Race {
         Race race = new Race();
         race.createVehicles();
     }
+
+
+    public static boolean isThereABrokenTruck() {
+        int chance = RandomUtil.getRundomBetween(0,100);
+        if(chance > 5){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
 
     public void createVehicles(){
         for (int i = 0; i < 10 ; i++) {
