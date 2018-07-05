@@ -2,7 +2,43 @@ package com.codecool;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Vehicles extends Race {
-    public static ArrayList<String> autoName = new ArrayList <>(Arrays.asList ("Magic", "Prody", "Storm", "Blaze", "Bolt", "Vanish", "Fang", "Pinnacle", "Dominion", "Catalyst", "Falcon", "Temperament", "Dragon", "Radiance", "Quest", "Parallel", "Shadow", "Parallel", "Ranger", "Adventure"));
-    public static ArrayList<String> motorName = new ArrayList<>(Arrays.asList("Motorcycle 1"));
+public class Vehicles {
+    protected int normalSpeed;
+    protected String name;
+    protected int distanceTraveled;
+
+
+
+    public int getNormalSpeed() {
+        return normalSpeed;
+    }
+
+    public void setNormalSpeed(int normalSpeed) {
+        this.normalSpeed = normalSpeed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getDistanceTraveled() {
+        return distanceTraveled;
+    }
+
+    public void setDistanceTraveled(int distanceTraveled) {
+        this.distanceTraveled = distanceTraveled;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicles{" +
+                "normalSpeed=" + normalSpeed +
+                ", name='" + name + '\'' +
+                ", distanceTraveled=" + distanceTraveled +
+                '}';
+    }
 }
