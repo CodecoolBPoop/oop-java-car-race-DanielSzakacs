@@ -1,7 +1,6 @@
 package com.codecool;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public  class Race {
@@ -14,6 +13,8 @@ public  class Race {
     }
 
     public static void main(String[] args) {
+        Weather.setRaining(); // Set the weather
+
         System.out.println("OK");
         Race race = new Race();
         race.createVehicles();
@@ -23,7 +24,7 @@ public  class Race {
         for (int i = 0; i < 10 ; i++) {
             Car car = new Car();
             Truck truck = new Truck();
-            Motorcycle motorcycle = new Motorcycle();
+            Motorcycle motorcycle = new Motorcycle(i);
 
             vehicles.add(car);
             vehicles.add(truck);

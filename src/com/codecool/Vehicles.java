@@ -1,6 +1,4 @@
 package com.codecool;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Vehicles {
     protected int normalSpeed;
@@ -29,8 +27,8 @@ public class Vehicles {
         return distanceTraveled;
     }
 
-    public void setDistanceTraveled(int distanceTraveled) {
-        this.distanceTraveled = distanceTraveled;
+    public void moveForAnHour(){
+        distanceTraveled += normalSpeed;
     }
 
     @Override
